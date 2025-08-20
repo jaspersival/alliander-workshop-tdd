@@ -21,6 +21,11 @@ style: |
 - Fun! :relaxed:
 
 ---
+<style scoped>
+section {
+  font-size: 25px;
+}
+</style>
 ## Kata 1: FizzBuzz
 
 **Description:**
@@ -38,9 +43,13 @@ Write a `fizzBuzz` method that accepts a number and returns a string according t
 - Refactor after each passing test.
 
 ---
-
 ## Kata 2: String Calculator
 
+<style scoped>
+section {
+  font-size: 15px;
+}
+</style>
 **Description:**
 Create a simple calculator that takes a string and returns an integer.
 
@@ -71,9 +80,13 @@ int Add(string numbers)
   `"Negative number(s) not allowed: <negativeNumbers>"`
 - Multiple errors return all messages separated by newlines.
 - Numbers bigger than 1000 should be ignored (`2 + 1001 = 2`).
-
 ---
 
+<style scoped>
+section {
+  font-size: 22px;
+}
+</style>
 ## Kata 3: Password Input Field Validation
 
 **Description:**
@@ -96,7 +109,11 @@ Create a password validator function for a user registration form.
   Error: `"password must contain at least one special character"`
 
 ---
-
+<style scoped>
+section {
+  font-size: 22px;
+}
+</style>
 ## Kata 4: Search Functionality
 
 **Description:**
@@ -132,6 +149,11 @@ Create an app for scanning bar codes to sell products.
 
 ---
 
+<style scoped>
+section {
+  font-size: 15px;
+}
+</style>
 ## Kata 6: Banking Kata
 
 **Description:**
