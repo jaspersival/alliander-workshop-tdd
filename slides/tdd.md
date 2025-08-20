@@ -9,8 +9,13 @@ style: |
   }
 ---
 # Test Driven ~~Development~~ Design
+- Specification-first
 - Design methodology
-- Write tests first
-- Write code to pass tests
-- Refactor code
-- Repeat
+![bg right:55%](./pictures/tdd.png)
+---
+# Why TDD?
+- Testable code
+- Enables refactoring
+- Less bugs and regressions
+- Avoids over-engineering
+- Fun! :relaxed:
