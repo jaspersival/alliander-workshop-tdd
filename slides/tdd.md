@@ -21,6 +21,14 @@ style: |
 - Fun! :relaxed:
 
 ---
+# Getting Started
+- `git clone https://github.com/jaspersival/alliander-workshop-tdd.git`
+- (Alternative `gh repo clone jaspersival/alliander-workshop-tdd`)
+- See `README.md` for setup instructions
+- See `tdd-exercises.md` for kata exercises
+- Based on https://tddmanifesto.com/exercises/
+
+---
 <style scoped>
 section {
   font-size: 25px;
