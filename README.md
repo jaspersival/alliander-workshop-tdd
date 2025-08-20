@@ -1,5 +1,5 @@
 # alliander-workshop-tdd
-Learn and practice Test Driven Development
+Learn and practice Test Driven Development. **See tdd-exercises.md for the exercises.**
 
 # Installation instructions
 ### Clone the repository
@@ -9,7 +9,7 @@ cd alliander-workshop-tdd;
 ```
 
 ### Install dependencies
-Assuming you are now inside the `alliander-workshop-tdd` directory, run the following 
+Assuming you are now inside the `alliander-workshop-tdd` directory, run the following
 command to install the required dependencies:
 
 #### On Linux or macOS:
