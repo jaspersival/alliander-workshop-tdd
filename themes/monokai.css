@@ -1,0 +1,312 @@
+@charset "UTF-8";
+/*!
+ * Marp Monokai theme.
+ * @theme monokai
+ * @author brayevalerien
+ * @auto-scaling true
+ * @size 4:3 1440px 1080px
+ * @size 16:9 1920px 1080px
+ */
+
+:root {
+    --background: #272822;
+    --current-line: #3E3D32;
+    --foreground: #F8F8F2;
+    --comment: #75715E;
+    --cyan: #66D9EF;
+    --green: #A6E22E;
+    --orange: #FD971F;
+    --pink: #F92672;
+    --purple: #AE81FF;
+    --red: #F92672;
+    --yellow: #E6DB74;
+}
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: var(--background);
+    color: var(--foreground);
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-deletion {
+    color: var(--comment);
+}
+
+.hljs-meta .hljs-doctag,
+.hljs-built_in,
+.hljs-selector-tag,
+.hljs-section,
+.hljs-link,
+.hljs-class {
+    color: var(--cyan);
+}
+
+.hljs-title {
+    color: var(--green);
+}
+
+.hljs-params {
+    color: var(--orange);
+}
+
+.hljs-keyword {
+    color: var(--pink);
+}
+
+.hljs-literal,
+.hljs-number {
+    color: var(--purple);
+}
+
+.hljs-regexp {
+    color: var(--red);
+}
+
+.hljs-string,
+.hljs-name,
+.hljs-type,
+.hljs-attr,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition,
+.hljs-template-tag {
+    color: var(--yellow);
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-title,
+.hljs-section,
+.hljs-doctag,
+.hljs-type,
+.hljs-name,
+.hljs-strong {
+    font-weight: bold;
+}
+
+.hljs-params,
+.hljs-emphasis {
+    font-style: italic;
+}
+
+svg[data-marp-fitting=svg] {
+    max-height: 580px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 0.5em 0;
+    color: var(--purple);
+}
+
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong,
+h6 strong {
+    font-weight: inherit;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: 0.9em;
+}
+
+p,
+blockquote {
+    margin: 1em 0 0 0;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+    padding-left: 3em;
+}
+
+ul>li,
+ol>li {
+    margin: 0.3em 0 0 0;
+    color: var(--foreground);
+}
+
+ul>li::marker,
+ol>li::marker {
+    color: var(--comment);
+}
+
+ul>li>p,
+ol>li>p {
+    margin: 0.6em 0 0 0;
+}
+
+code {
+    display: inline-block;
+    font-family: "Courier", monospace;
+    font-size: 0.8em;
+    margin: -0.1em 0.15em;
+    padding: 0.1em 0.2em;
+    color: var(--green);
+}
+
+pre {
+    margin: 1em 0 0 0;
+    overflow: visible;
+}
+
+pre code {
+    box-sizing: border-box;
+    min-width: 100%;
+    padding: 0.5em;
+    font-size: 0.7em;
+    background: var(--current-line);
+}
+
+pre code svg[data-marp-fitting=svg] {
+    max-height: calc(580px - 1em);
+}
+
+blockquote {
+    margin: 1em 0 0 0;
+    padding: 1em 1em;
+    border-left-width: 6px;
+    border-left: 7.5px solid var(--comment);
+    background: rgba(255, 255, 255, 0.025);
+    position: relative;
+}
+
+blockquote>*:first-child {
+    margin-top: 0;
+}
+
+blockquote>*:last-child {
+    margin-bottom: 0;
+}
+
+mark {
+    background: transparent;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+    font-size: 0.9em;
+}
+
+table thead th {
+    border-top: 2px solid var(--foreground);
+    border-bottom: 2px solid var(--foreground);
+    padding: 0.4em 0.6em;
+    text-align: left;
+    background-color: var(--current-line);
+    color: var(--foreground);
+}
+
+table tbody td {
+    border: none;
+    padding: 0.4em 0.6em;
+}
+
+table tbody tr:last-child td {
+    border-bottom: 2px solid var(--foreground);
+}
+
+section {
+    font-size: 25px;
+    font-family: "Noto Sans";
+    line-height: 1.35;
+    letter-spacing: 1.25px;
+    padding: 70px;
+    color: var(--foreground);
+    background-color: var(--background);
+}
+
+section a,
+section mark {
+    color: var(--cyan);
+    text-decoration: underline;
+}
+
+section code {
+    background: var(--current-line);
+    color: var(--green);
+}
+
+section pre>code {
+    background: var(--current-line);
+}
+
+section img {
+    max-width: 100%;
+    max-height: 50vh;
+    object-fit: contain;
+    display: block;
+    margin: 1em auto;
+}
+
+section header,
+section footer,
+section section::after,
+section blockquote::before,
+section blockquote::after {
+    color: var(--comment);
+}
+
+header,
+footer,
+section::after {
+    font-size: 66%;
+    height: 70px;
+    padding: 10px 25px;
+    line-height: 50px;
+    position: absolute;
+    color: var(--comment);
+}
+
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+section::after {
+    bottom: 0;
+    right: 0;
+    font-size: 80%;
+}

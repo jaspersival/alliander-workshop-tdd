@@ -1,0 +1,31 @@
+[project]
+name = "alliander-course-legacy-code"
+version = "0.1.0"
+description = "Course material for the Alliander course on working effectively with legacy code"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mypy>=1.16.1",
+    "pandas>=2.3.1",
+    "pre-commit>=4.2.0",
+    "pytest>=8.4.1",
+    "ruff>=0.12.1",
+]
+
+[tool.uv]
+package = true
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+src = ["src"]
+include = ['pyproject.toml', 'src/**/*.py']
+
+
+[tool.ruff.lint]
+preview=true
+select = ["PLR6301"]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+"test_*.py" = ["PLR6301"]
