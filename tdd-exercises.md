@@ -136,15 +136,19 @@ Create a simple bank application with deposit, withdraw, and print statement fea
 
 **Constraints:**
 - Start with a class:
-  ```java
-  public class Account {
-    public void deposit(int amount)
-    public void withdraw(int amount)
-    public void printStatement()
-  }
+  ```python
+  class Account:
+      def deposit(self, amount: int):
+          pass
+
+      def withdraw(self, amount: int):
+          pass
+
+      def print_statement(self):
+          pass
   ```
 - Do not add other public methods.
-- Use Strings and Integers for dates and amounts.
+- Use strings and integers for dates and amounts.
 - Ignore spacing in the printed statement.
 
 **Requirements:**
