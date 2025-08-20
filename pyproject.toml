@@ -1,7 +1,7 @@
 [project]
-name = "alliander-course-legacy-code"
+name = "alliander-workshop-tdd"
 version = "0.1.0"
-description = "Course material for the Alliander course on working effectively with legacy code"
+description = "Course material for the workshop on Test Driven Development"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
